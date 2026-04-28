@@ -1,0 +1,9 @@
+{
+  "name": "gke-diagnostic-app",
+  "version": "1.0.0",
+  "description": "Diagnostic Node.js app for GKE labs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

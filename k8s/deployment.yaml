@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diagnostic-app
+  labels:
+    app: diagnostic-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: diagnostic-app
+  template:
+    metadata:
+      labels:
+        app: diagnostic-app
+    spec:
+      containers:
+      - name: diagnostic-app
+        image: us-east4-docker.pkg.dev/PROJECT_ID/my-docker-repo/diagnostic-app:v1
+        ports:
+        - containerPort: 8080
+
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 3
+
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
