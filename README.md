@@ -36,7 +36,7 @@ Designed as a lightweight operational debugging microservice for Kubernetes work
 ## 🏗 Architecture
 
 
-https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/Kubernetes_node.png
+screenshots/Kubernetes_node.png
 
 
 
