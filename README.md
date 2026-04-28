@@ -36,11 +36,7 @@ Designed as a lightweight operational debugging microservice for Kubernetes work
 ## 🏗 Architecture
 
 
-<<<<<<< HEAD
-<img src="screenshots/Kubernetes_node.png" width="900">
-=======
-screenshots/Kubernetes_node.png
->>>>>>> c96cd6f2cd02132146863617526c6f2195e9663f
+<img src="screenshots/Kubernetes_node.png" width="700">
 
 
 
@@ -109,8 +105,9 @@ Example Output
 ---
 
 # Docker Build
-
+```bash
 docker build -t gke-diagnostic-app .
+```
 
 # Create Google Atifact Registry 
 
@@ -197,37 +194,29 @@ kubectl get svc
 
 <img src="screenshots/image-2.png" width="900">
 
-https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-2.png
 
 ## GKE Cluster Creation
 
 <img src="screenshots/image.png" width="900">
-https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image.png
+
 
 ## Pods Running
 <img src="screenshots/image-1.png" width="900">
-![https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-1.png
 
 
 ## Scale deployment from 1 to 4 pods(running)
 <img src="screenshots/image-3.png" width="900">
 
-https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-3.png
 
 ## Service External IP
 <img src="screenshots/image-4.png" width="900">
-https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-4.png
+
 
 ## App Response
 Youtube link: https://youtu.be/q1Ta0QvX1IA
 
 ---
 
-## Resume Project Impact
-
-Built and deployed a cloud-native diagnostic microservice on GKE using Docker, Kubernetes and Artifact Registry implementing health probes, replica scaling, load balancing and container security best practices.
-
----
 
 ## Author
 
