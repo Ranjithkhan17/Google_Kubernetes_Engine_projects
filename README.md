@@ -36,7 +36,7 @@ Designed as a lightweight operational debugging microservice for Kubernetes work
 ## 🏗 Architecture
 
 
-https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/Kubernetes_node.png
+<img src="screenshots/Kubernetes_node.png" width="900">
 
 
 
@@ -189,22 +189,29 @@ kubectl get svc
 
 # Screenshots
 
-## Push image to Google Artifactory Registry
+# Push image to Google Artifactory Registry
+
+<img src="screenshots/image-2.png" width="900">
 
 https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-2.png
 
 ## GKE Cluster Creation
+
+<img src="screenshots/image.png" width="900">
 https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image.png
 
 ## Pods Running
+<img src="screenshots/image-1.png" width="900">
 ![https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-1.png
 
 
 ## Scale deployment from 1 to 4 pods(running)
+<img src="screenshots/image-3.png" width="900">
 
 https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-3.png
 
 ## Service External IP
+<img src="screenshots/image-4.png" width="900">
 https://github.com/Ranjithkhan17/Google_Kubernetes_Engine_projects/blob/dev/screenshots/image-4.png
 
 ## App Response
