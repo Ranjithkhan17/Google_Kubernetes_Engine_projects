@@ -110,64 +110,68 @@ docker build -t gke-diagnostic-app .
 ```
 
 # Create Google Atifact Registry 
-
+```bash
 gcloud artifacts repositories create my-docker-repo \
     --repository-format=docker \
     --location=YOUR_REGION \
     --project=YOUR_PROJECT_ID
+```
 
 
 
 # Push to Artifact Registry
 
-
+```bash 
 gcloud auth configure-docker us-east4-docker.pkg.dev
 
 docker tag gke-diagnostic-app \
 us-east4-docker.pkg.dev/PROJECT_ID/my-docker-repo/diagnostic-app:v1
 
 docker push us-east4-docker.pkg.dev/PROJECT_ID/my-docker-repo/diagnostic-app:v1
+```
 
 ---
 
 # Create GKE Cluster
-
+```bash
 gcloud container clusters create hello-world \
 --num-nodes=2 \
 --machine-type=e2-medium \
 --zone us-east4-b
-
+```
 
 # Deploy Application
 
-
+```bash
 kubectl create deployment diagnostic-app \
 --image=us-east4-docker.pkg.dev/PROJECT_ID/my-docker-repo/diagnostic-app:v1
+```
 
 ## Check pods
-
+```bash
 kubectl get pods
 kubectl get deployments
-
+```
 
 ## Scale Application
-
+```bash
 kubectl scale deployment diagnostic-app --replicas=4
+```
 
 
 ## Expose Service
 
-
+```bash
 kubectl expose deployment diagnostic-app \
 --type=LoadBalancer \
 --port=80 \
 --target-port=8080
-
+```
 
 ## Check external IP:
-
+``bash
 kubectl get svc
-
+```
 # Security Best Practices Implemented
 
 ✅ Non-root container user  
@@ -192,24 +196,24 @@ kubectl get svc
 
 # Push image to Google Artifactory Registry
 
-<img src="screenshots/image-2.png" width="900">
+<img src="screenshots/image-2.png" width="700">
 
 
 ## GKE Cluster Creation
 
-<img src="screenshots/image.png" width="900">
+<img src="screenshots/image.png" width="700">
 
 
 ## Pods Running
-<img src="screenshots/image-1.png" width="900">
+<img src="screenshots/image-1.png" width="700">
 
 
 ## Scale deployment from 1 to 4 pods(running)
-<img src="screenshots/image-3.png" width="900">
+<img src="screenshots/image-3.png" width="700">
 
 
 ## Service External IP
-<img src="screenshots/image-4.png" width="900">
+<img src="screenshots/image-4.png" width="700">
 
 
 ## App Response
