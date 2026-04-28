@@ -36,7 +36,11 @@ Designed as a lightweight operational debugging microservice for Kubernetes work
 ## 🏗 Architecture
 
 
+<<<<<<< HEAD
 <img src="screenshots/Kubernetes_node.png" width="900">
+=======
+screenshots/Kubernetes_node.png
+>>>>>>> c96cd6f2cd02132146863617526c6f2195e9663f
 
 
 
