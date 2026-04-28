@@ -169,7 +169,7 @@ kubectl expose deployment diagnostic-app \
 ```
 
 ## Check external IP:
-``bash
+```bash
 kubectl get svc
 ```
 # Security Best Practices Implemented
