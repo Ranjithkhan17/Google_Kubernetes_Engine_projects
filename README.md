@@ -92,7 +92,7 @@ Example Output
 
 # Project Structure
 
-
+```bash
 .
 ├── Dockerfile
 ├── package.json
@@ -100,7 +100,7 @@ Example Output
 ├── k8s/
 │   └── deployment.yaml
 └── README.md
-
+```
 
 ---
 
