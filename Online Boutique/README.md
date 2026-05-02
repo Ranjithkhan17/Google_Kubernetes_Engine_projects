@@ -147,7 +147,7 @@ gcloud container clusters delete online-boutique \
 * Kubernetes resource management (Pods, Services)
 
 ---
-
+Youtube link:https://youtu.be/2BhT-a0i5ME
 
 ---
 
