@@ -126,7 +126,7 @@ gcloud container clusters delete online-boutique \
 (Add your screenshots here)
 
 * GKE Cluster Creation
-<img src="screenshots/cluster-creation.png" width="700">
+<img src="screenshots/clusters.png" width="700">
 
 * Pod Status
 <img src="screenshots/pod_status.png" width="700">
